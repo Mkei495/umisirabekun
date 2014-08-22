@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+	<head>
+		<!--[if lt IE 9]>
+			<script src="./dist/html5shiv-printshiv.js"></script>
+		<![endif]-->
+		<meta name="generator" content="ez-HTML">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>スーパー海調べ君</title>
+		<base target="_self">
+		<script src="./js/geolocation.js" language="javascript" type="text/javascript" charset="UTF-8"></script>
+		<script src="./js/db_core.js" language="javascript" type="text/javascript" charset="UTF-8"></script>
+		<link rel="stylesheet" href="./css/sys.css" hreflang="ja" type="text/css" media="all" charset="UTF-8">
+		<link rel="stylesheet" href="./css/index.css" hreflang="ja" type="text/css" media="all" charset="UTF-8">
+	</head>
+	<body>
+		<div id="tle">
+			<h1 align="center">スーパー海調べ君</h1>
+		</div>
+		<div id="main">
+<?php
+print 'hello world';
+?>
+			<script language="javascript" type="text/javascript" charset="UTF-8">
+			<!--
+				var serch_val = "";
+				
+				var i=0;
+				var log = new Array(3);
+				log[0]="";
+				log[1]="";
+				log[2]="";
+				
+				
+				function exe(){
+					serch_val = document.serch.text.value;
+//
+					//serch_val += i;
+					//i++;
+					
+//					alert(serch_val);
+//
+					log[2]=log[1];
+					log[1]=log[0];
+					log[0]=serch_val;
+					
+					/*
+					document.getElementById("log_latest").innerHTML = log[0];
+					document.getElementById("log_2nd").innerHTML = log[1];
+					document.getElementById("log_old").innerHTML = log[2];
+*/
+				}
+			//-->
+			</script>
+
+<script language="javascript" type="text/javascript" charset="UTF-8">
+<!--
+//-->
+</script>
+			<form id="serch" name="serch" action="./result.html" method="GET">
+			
+				<!--
+				<input type="text" name="text" value="" style="width: 60%;">
+				<input type="submit" value="Execute" tabindex="2" onclick="exe();location.href='./result.html'">
+				-->
+				<p align="center"><input type="button" value="GeoLocation" tabindex="3" onclick="geol()"></p>
+			</form>
+			
+			<ul id="location">
+			</ul> 
+			
+			<!-- <ol>
+				<li id="log_latest"></li>
+				<li id="log_2nd"></li>
+				<li id="log_old"></li>
+			</ol> -->
+		</div>
+		<br><br><br>
+			<div style="margin: 0 auto;width:100%" align="center">
+			<!-- <isindex> -->
+			 	<div  class="ifr"><iframe frameborder="0" scrolling="auto" src="./sea.html" width="100%" height="350px" id="ifr"></iframe></div>
+			</div>
+	</body>
+</html>
